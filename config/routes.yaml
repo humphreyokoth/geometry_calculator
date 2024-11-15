@@ -1,0 +1,16 @@
+controllers:
+    resource:
+        path: ../src/Controller/
+        namespace: App\Controller
+    type: attribute
+
+
+circle:
+  path: /circle/{radius}
+  controller: App\Controller\GeometryController::getCircle
+  methods: GET
+
+triangle:
+  path: /triangle/{a}/{b}/{c}
+  controller: App\Controller\GeometryController::getTriangle
+  methods: GET
